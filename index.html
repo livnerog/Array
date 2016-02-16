@@ -18,25 +18,24 @@ res[i][j] = randomInteger(0, 100);
 return res;
 }
 var arr = createArray(10);
-console.table (arr);
+console.table (arr); //выводит в таблицу
 
 
 var line = Array();
 for (var i = 0; i < 10; i++) {
 for (var j = 0; j < 10; j++){
-line.push(arr[i][j]);
+line.push(arr[i][j]); //выводит в строку
 
 }
 }
 console.log(line);
 console.log(" ");
+//по граням
 var lineh1 = Array();
 var lineh2 = Array();
 var linev1 = Array();
 var linev2 = Array();
- 	
-	
-	for (var i=0; i<10; i++){
+ for (var i=0; i<10; i++){
 		lineh1.push(arr[0][i]);
 		lineh2.push(arr[9][i]);
 		linev1.push(arr[i][0]);
@@ -48,6 +47,21 @@ var linev2 = Array();
 	console.log(lineh2);
 	console.log(linev1);
 	console.log(linev2);
+console.log(line);		
+console.log(" ");
+//для триугольника
+var lineh2 = Array();
+var linev1 = Array();
+var lined = Array();
+for (var i=0; i<10; i++){
+		lineh2.push(arr[9][i]);
+		linev1.push(arr[i][0]);
+		lined.push(arr[i][i]);
+			}
+lined.reverse();
+console.log(linev1);
+console.log(lineh2);
+console.log(lined);
 		</script>
 	</body>
 </html>
